@@ -1,0 +1,22 @@
+@import '_vars';
+@import 'modules/_animals';
+@import 'modules/_lightbox';
+@import 'modules/_error';
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/ice.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}

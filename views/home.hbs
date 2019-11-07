@@ -1,0 +1,26 @@
+<section class="the-arctic">
+    <div class="animals-grid">
+        {{#each animal}}
+            <div class="animal-panel">
+                <h2>{{ name }}</h2>
+                <h3 class="clear">{{ inuktitut }}</h3>
+
+                <img class="a-image" src="{{ image }}">
+
+                <a class="a-link" href="{{ id }}">
+                    View more info
+                </a>
+            </div>
+        {{/each}}
+    </div>
+</section>
+
+<section class="lightbox">
+    <span class="close"><i class="fas fa-times"></i></span>
+    <div class="lb-image">
+        <img src="">
+    </div>
+    <div class="lb-content">
+        <!--rendered data-->
+    </div>
+</section>

@@ -1,0 +1,46 @@
+.animals-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .animal-panel {
+        flex: 0 1 200px;
+        text-align: center;
+        padding: 8px;
+
+        .a-image { 
+            max-width: 275px; 
+        }
+        
+        .a-link {
+            display: block;
+            text-decoration: none;
+            margin: 0 auto;
+            padding: 5px;
+            border: 1px solid black;
+            color: black;
+            border-radius: 15px;
+            background-color: lightblue;
+        }
+
+        h2, h3 { 
+            margin: 5px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .animals-grid {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        .animal-panel {
+            flex: 1 1;
+
+            .a-image { max-width: 250px; }
+
+            .a-link { width: 240px; }
+        }
+    }
+}
