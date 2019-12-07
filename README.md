@@ -57,7 +57,11 @@ npm install
 ```sh
 MAMP (Mac) or WAMP (Windows)
 ```
-4. Run on localhost:3000
+4. Import database into phpMyAdmin
+```sh
+db_guardians.mssql
+```
+5. Run on localhost:3000
 ```sh
 npm start
 ```
