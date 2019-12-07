@@ -1,0 +1,69 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Dec 07, 2019 at 04:28 AM
+-- Server version: 5.7.26
+-- PHP Version: 7.3.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `db_guardians`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_characters`
+--
+
+CREATE TABLE `tbl_characters` (
+  `id` int(11) NOT NULL,
+  `name` varchar(60) COLLATE utf8_bin NOT NULL,
+  `inuktitut` varchar(60) COLLATE utf8_bin NOT NULL,
+  `image` varchar(200) COLLATE utf8_bin NOT NULL,
+  `ability` varchar(200) COLLATE utf8_bin NOT NULL,
+  `description` varchar(200) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `tbl_characters`
+--
+
+INSERT INTO `tbl_characters` (`id`, `name`, `inuktitut`, `image`, `ability`, `description`) VALUES
+(1, 'Arctic Fox', 'Tiriganiaq', 'https://cdn.pixabay.com/photo/2017/08/06/15/05/white-2593328_1280.jpg', 'Camouflage', 'These northern foxes are about the size of a large indoor cat. Their thick fur allows them to survive the harshest of winters. Unfortunately, they usually don\'t live past a year old.'),
+(2, 'Polar Bear', 'Nanuk', 'https://cdn.pixabay.com/photo/2016/09/12/17/51/polar-bears-1665367_1280.jpg', 'Swimming', 'These marine mammals are incredible seal hunters, able to sniff one up to a kilometre distance. Their skin is black and their fur is transparent.'),
+(3, 'White Wolf', 'Amarok', 'https://cdn.pixabay.com/photo/2018/01/02/14/47/wolf-3056348_1280.jpg', 'Waterproof', 'Smaller than their grey counterparts, these wolves have adapted by conserving their body fat. This allows them to stay warmer, and not need a whole lot of food.');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tbl_characters`
+--
+ALTER TABLE `tbl_characters`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_characters`
+--
+ALTER TABLE `tbl_characters`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
